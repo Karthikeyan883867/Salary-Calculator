@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="./sc.css">
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Salary Calculator</h1>
+        <div class="form-group">
+            <label for="basicSalary">Basic Salary (₹):</label>
+            <input type="number" id="basicSalary" placeholder="Enter basic salary">
+        </div>
+        <div class="form-group">
+            <label for="allowances">Allowances (₹):</label>
+            <input type="number" id="allowances" placeholder="Enter total allowances">
+        </div>
+        <div class="form-group">
+            <label for="deductions">Deductions (₹):</label>
+            <input type="number" id="deductions" placeholder="Enter total deductions">
+        </div>
+        <button onclick="calculateSalary()">Calculate Salary</button>
+        <div id="result" class="result" style="display:none;">
+            <h2>Gross Salary: ₹<span id="grossSalary"></span></h2>
+            <h2>Net Salary: ₹<span id="netSalary"></span></h2>
+        </div>
+    </div>
+    
+    <script src="./sc.js"></script>
+</body>
+</html>
